@@ -1,4 +1,4 @@
-import { Order, OrderWithClient } from "@/types/Order"
+import { Order, OrderWithClient } from "@/types/entities/Order"
 import React from "react"
 import { OrderCard } from "./OrderCard"
 

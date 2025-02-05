@@ -12,7 +12,7 @@ import api from "@/lib/api"
 import Image from "next/image"
 import { toast } from "sonner"
 import { usePathname, useRouter } from "next/navigation"
-import { Profession, Speciality } from "@/types/Speciality"
+import { Profession, Speciality } from "@/types/entities/Speciality"
 import { signIn } from "next-auth/react"
 
 interface Etapa3Props {
@@ -138,7 +138,7 @@ export default function Etapa3({ back, etapa, professions, specialities }: Etapa
               {...register("specialityId", {
                 onChange: (e) => updateSpecialityId(e.target.value),
               })}
-              className="bg-primary-gray w-full rounded-md p-2"
+              className="w-full rounded-md bg-primary-gray p-2"
             >
               {availableSpecialities.map((speciality) => (
                 <option key={speciality.id} value={speciality.id}>

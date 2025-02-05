@@ -1,4 +1,4 @@
-import { Uezer } from "@/types/Uezer"
+import { Uezer } from "@/types/entities/Uezer"
 import React from "react"
 import UezerCard from "./UezerCard"
 import RemoveFiltersButton from "./RemoveFiltersButton"

@@ -1,13 +1,13 @@
 import { options } from "@/app/api/auth/[...nextauth]/options"
 import { api } from "@/lib/serverapi"
 import { Client } from "@/types/Client"
-import { Uezer } from "@/types/Uezer"
+import { Uezer } from "@/types/entities/Uezer"
 import { Metadata } from "next"
 import { getServerSession } from "next-auth"
 import { notFound } from "next/navigation"
 import { ClientProfilePage } from "../clientes/ClientProfilePage"
 import { UezerProfilePage } from "../uezers/UezerProfilePage"
-import { STATUS, USERTYPE } from "@/types/enums"
+import { STATUS, USERTYPE } from "@/types/entities/enums"
 
 type Props = {
   params: { username: string }

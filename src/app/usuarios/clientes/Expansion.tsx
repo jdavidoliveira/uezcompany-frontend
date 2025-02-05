@@ -1,6 +1,6 @@
 "use client"
 
-import { Order, OrderDetailed } from "@/types/Order"
+import { Order, OrderDetailed } from "@/types/entities/Order"
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import EditOrderOverlay from "./EditOrder"

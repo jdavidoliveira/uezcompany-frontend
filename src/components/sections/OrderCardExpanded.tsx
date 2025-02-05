@@ -1,7 +1,7 @@
 import React, { ComponentProps } from "react"
 import { motion } from "framer-motion"
 import { X } from "lucide-react"
-import { Order, OrderWithClient } from "@/types/Order"
+import { Order, OrderWithClient } from "@/types/entities/Order"
 import Image from "next/image"
 import { getProfessionIconByName } from "@/utils/getProfessionIconByName"
 import { twMerge } from "tailwind-merge"

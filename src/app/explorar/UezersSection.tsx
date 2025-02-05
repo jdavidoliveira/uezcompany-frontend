@@ -1,7 +1,7 @@
 import { api } from "@/lib/serverapi"
 import SearchBox from "./SearchBox"
 import { UezerCard } from "./UezerCard"
-import { Uezer } from "@/types/Uezer"
+import { Uezer } from "@/types/entities/Uezer"
 import { ChevronRight } from "lucide-react"
 
 export default async function UezersSection() {

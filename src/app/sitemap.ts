@@ -1,6 +1,6 @@
 import { api } from "@/lib/serverapi"
-import { Client } from "@/types/Client"
-import { Uezer } from "@/types/Uezer"
+import { Client } from "@/types/entities/Client"
+import { Uezer } from "@/types/entities/Uezer"
 import type { MetadataRoute } from "next"
 
 const defaultSitemap: MetadataRoute.Sitemap = [

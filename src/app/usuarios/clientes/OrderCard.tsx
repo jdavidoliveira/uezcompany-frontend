@@ -1,6 +1,6 @@
 "use client"
 
-import { Order } from "@/types/Order"
+import { Order } from "@/types/entities/Order"
 import { Megaphone } from "lucide-react"
 import { useState } from "react"
 import OrderCardExpanded from "./Expansion"

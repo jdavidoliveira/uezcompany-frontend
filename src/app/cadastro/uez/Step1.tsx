@@ -14,7 +14,7 @@ import Etapa2 from "./Etapa2"
 import Etapa3 from "../Etapa3"
 import Input from "../Input"
 import UserCard from "./UserCard"
-import { Profession, Speciality } from "@/types/Speciality"
+import { Profession, Speciality } from "@/types/entities/Speciality"
 
 const userFormSchema = z.object({
   usertype: z.enum(["UEZER", "CLIENT"]),
@@ -94,7 +94,7 @@ export default function Step1({
                 />
                 <button
                   className={twMerge(
-                    "bg-primary-gray rounded-r-md p-2",
+                    "rounded-r-md bg-primary-gray p-2",
                     errors.password ? "border border-l-0 border-red-500" : "",
                   )}
                   onClick={(e) => {

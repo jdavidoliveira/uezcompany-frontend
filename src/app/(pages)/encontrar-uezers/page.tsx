@@ -1,7 +1,8 @@
 import { api } from "@/lib/serverapi"
 import NotSession from "@/components/NotSession"
 import FindUezers from "./FindUezers"
-import { Uezer } from "@/types/Uezer"
+import { Uezer } from "@/types/entities/Uezer"
+import { WithPagination } from "@/types/utils/WithPagination"
 
 interface PageProps {
   searchParams: Record<string, string>
@@ -13,10 +14,11 @@ export default async function Page({ searchParams, ...props }: PageProps) {
   const params = new URLSearchParams({
     search: search || "",
     orderByProfession: orderByProfession || "default",
-    ...(page && { page, pageSize: "5" }),
+    ...(page && { page, pageSize: "20" }),
   })
 
-  const searchByUezers = (await api.get<Uezer[]>(`/uezers?${params.toString()}`, { cache: "no-cache" })) || []
+  const { data: searchByUezers } =
+    (await api.get<WithPagination<Uezer[]>>(`/uezers?${params.toString()}`, { cache: "no-cache" })) || []
   return (
     <>
       <main className="w-full">
@@ -27,7 +29,7 @@ export default async function Page({ searchParams, ...props }: PageProps) {
             qualificados e transforme suas ideias em realidade!
           </p>
         </div>
-        <FindUezers uezers={searchByUezers.data} />
+        <FindUezers uezers={searchByUezers.data} meta={searchByUezers.meta} />
       </main>
       <NotSession />
     </>

@@ -11,7 +11,7 @@ import { twMerge } from "tailwind-merge"
 import { motion } from "framer-motion"
 import { toast } from "sonner"
 import { infoByType } from "@/utils/notifications/infoByType"
-import { Notification } from "@/types/Notification"
+import { Notification } from "@/types/entities/Notification"
 import { timeFromNow } from "@/utils/dayjs"
 
 const NotificationsContext = createContext<{
@@ -135,7 +135,7 @@ export default function Notifications() {
                 })}
               </ul>
             ) : (
-              <h1 className="mb-10 mt-6 text-center text-base font-medium text-black">
+              <h1 className="mx-auto mb-10 mt-6 text-center text-base font-medium text-black">
                 Não há notificações no momento 😥
               </h1>
             )}

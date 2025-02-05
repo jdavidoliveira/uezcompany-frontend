@@ -15,7 +15,7 @@ import { toast } from "sonner"
 import Etapa3 from "../Etapa3"
 import { twMerge } from "tailwind-merge"
 import { signOut, useSession } from "next-auth/react"
-import { Profession, Speciality } from "@/types/Speciality"
+import { Profession, Speciality } from "@/types/entities/Speciality"
 import LoadingSpinner from "@/components/layout/LoadingSpinner"
 import { redirect, useRouter } from "next/navigation"
 

@@ -1,6 +1,6 @@
 import { getProfessionsWithSpecialities } from "@/actions/getProfessions"
 import Rating from "@/components/layout/Rating"
-import { SimpleUezer } from "@/types/Uezer"
+import { SimpleUezer } from "@/types/entities/Uezer"
 import { getProfessionIconByName } from "@/utils/getProfessionIconByName"
 import Image from "next/image"
 import Link from "next/link"

@@ -1,7 +1,7 @@
 "use client"
 
 import api from "@/lib/api"
-import { USERTYPE } from "@/types/enums"
+import { USERTYPE } from "@/types/entities/enums"
 import { AxiosError, AxiosResponse } from "axios"
 import { useRouter } from "next/navigation"
 import { ComponentProps } from "react"

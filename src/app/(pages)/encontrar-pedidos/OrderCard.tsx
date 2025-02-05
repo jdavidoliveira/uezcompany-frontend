@@ -1,7 +1,7 @@
 "use client"
 
 import Rating from "@/components/layout/Rating"
-import { OrderWithClient } from "@/types/Order"
+import { OrderWithClient } from "@/types/entities/Order"
 import { getProfessionIconByName } from "@/utils/getProfessionIconByName"
 import Image from "next/image"
 import { useState } from "react"

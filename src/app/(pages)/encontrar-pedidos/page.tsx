@@ -1,6 +1,6 @@
 import FindOrders from "./FindOrders"
 import { api } from "@/lib/serverapi"
-import { OrderWithClient } from "@/types/Order"
+import { OrderWithClient } from "@/types/entities/Order"
 import NotSession from "@/components/NotSession"
 
 interface PageProps {

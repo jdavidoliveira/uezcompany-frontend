@@ -1,7 +1,7 @@
 "use client"
 
 import { getProfessionsWithSpecialities } from "@/actions/getProfessions"
-import { Profession } from "@/types/Speciality"
+import { Profession } from "@/types/entities/Speciality"
 import { useSearchParams } from "next/navigation"
 import React, { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"

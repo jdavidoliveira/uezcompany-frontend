@@ -1,7 +1,7 @@
 "use server"
 
 import { api } from "@/lib/serverapi"
-import { Profession, Speciality } from "@/types/Speciality"
+import { Profession, Speciality } from "@/types/entities/Speciality"
 
 export async function getProfessionsWithSpecialities() {
   try {

@@ -1,4 +1,4 @@
-import { OrderStatus } from "@/types/Order"
+import { OrderStatus } from "@/types/entities/Order"
 
 export function translateOrderStatus(status: OrderStatus): string {
   switch (status) {

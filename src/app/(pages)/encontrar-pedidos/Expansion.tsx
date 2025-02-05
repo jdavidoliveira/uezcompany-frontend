@@ -1,6 +1,6 @@
 "use client"
 
-import { OrderWithClient } from "@/types/Order"
+import { OrderWithClient } from "@/types/entities/Order"
 import { FormEvent, useState } from "react"
 import { motion } from "framer-motion"
 import { X } from "lucide-react"

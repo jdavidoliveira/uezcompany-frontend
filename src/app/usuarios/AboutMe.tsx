@@ -1,7 +1,7 @@
 "use client"
 
 import api from "@/lib/api"
-import { USERTYPE } from "@/types/enums"
+import { USERTYPE } from "@/types/entities/enums"
 import { AxiosError } from "axios"
 import { Pencil, Check } from "lucide-react"
 import React, { useState } from "react"

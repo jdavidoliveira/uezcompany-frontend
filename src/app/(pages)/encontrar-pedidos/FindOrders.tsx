@@ -3,7 +3,7 @@
 import React from "react"
 import Search from "./Search"
 import FilterButton from "./FilterButton"
-import { Order, OrderWithClient } from "@/types/Order"
+import { Order, OrderWithClient } from "@/types/entities/Order"
 import OrderContainer from "./OrderContainer"
 
 interface OrderContainerProps {
