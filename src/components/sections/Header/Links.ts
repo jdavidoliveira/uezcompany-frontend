@@ -27,6 +27,10 @@ export const ClientLinks: Link[] = [
     text: "Sobre nós",
   },
   {
+    href: "/explorar",
+    text: "Explorar",
+  },
+  {
     href: "/encontrar-uezers",
     text: "Encontrar Uezers",
   },
